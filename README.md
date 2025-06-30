@@ -8,6 +8,13 @@
 
 ---
 # Youtube link - https://youtu.be/NgFmbqZ4RCE?si=0sPfBxQtiqVZ0y1r
+
+## 🎥 SheCare AI - Demo Video
+
+[![Watch the Demo](https://img.youtube.com/vi/NgFmbqZ4RCE/0.jpg)](https://www.youtube.com/watch?v=NgFmbqZ4RCE)
+
+👉 [Click here to watch on YouTube](https://www.youtube.com/watch?v=NgFmbqZ4RCE)
+
 ---
 ## 🌟 Features
 
