@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import api from "../api";
+import * as api from "../api";
 
 const Profile = () => {
   const [profile, setProfile] = useState({ name: "", email: "", age: "", weight: "", cycleLength: "", bio: "" });
@@ -73,7 +73,7 @@ const Profile = () => {
     setLoading(true);
     setError("");
     const token = localStorage.getItem("shecare_token");
-    api.delete("/profile", {
+    api.del("/profile", {
       headers: token ? { Authorization: `Bearer ${token}` } : {}
     })
       .then(() => {

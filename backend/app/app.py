@@ -9,9 +9,9 @@ from typing import List, Optional
 import os
 import json
 from dotenv import load_dotenv
-from models import User, PCOSCheck, CycleEntry, JournalEntry, Recommendation
-from database import SessionLocal, engine
-import models
+from .models import User, PCOSCheck, CycleEntry, JournalEntry, Recommendation
+from .database import SessionLocal, engine
+from . import models
 
 # Load .env
 env_path = os.path.join(os.path.dirname(__file__), ".env")
@@ -53,8 +53,9 @@ class UserOut(BaseModel):
     cycle_length: Optional[int] = None
     bio: Optional[str] = None
 
-    class Config:
-        orm_mode = True
+    model_config = {
+    "from_attributes": True
+}
 
 class UserUpdate(BaseModel):
     full_name: Optional[str] = None
@@ -100,8 +101,9 @@ class CycleEntryOut(BaseModel):
     end_date: Optional[datetime] = None
     notes: Optional[str] = None
 
-    class Config:
-        orm_mode = True
+    model_config = {
+    "from_attributes": True
+}
 
 class JournalEntryIn(BaseModel):
     date: Optional[datetime] = None

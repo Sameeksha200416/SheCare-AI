@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import api from "../api";
+import * as api from "../api";
 import SymptomForm from './SymptomForm';
 
 const AdminPanel = () => {
@@ -65,7 +65,7 @@ const AdminPanel = () => {
   };
   const handleDeleteTip = (id) => {
     setLoading(true);
-    api.delete(`/admin/tips/${id}`)
+    api.del(`/admin/tips/${id}`)
       .then(() => fetchTabData("tips"))
       .catch(() => setError("Failed to delete tip."))
       .finally(() => setLoading(false));
@@ -170,4 +170,4 @@ const AdminPanel = () => {
   );
 };
 
-export default AdminPanel; 
+export default AdminPanel;

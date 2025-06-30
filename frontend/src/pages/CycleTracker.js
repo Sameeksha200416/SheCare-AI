@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import api from "../api";
+import * as api from "../api";
 
 // Always treat yyyy-mm-dd as local date, never use new Date(str) directly!
 function formatDate(date) {
@@ -11,6 +11,16 @@ function formatDate(date) {
   const month = String(d.getMonth() + 1).padStart(2, "0");
   const day = String(d.getDate()).padStart(2, "0");
   return `${year}-${month}-${day}`;
+}
+
+// Helper to ensure YYYY-MM-DD for API
+function toIsoDate(str) {
+  if (/^\d{4}-\d{2}-\d{2}$/.test(str)) return str;
+  if (/^\d{2}-\d{2}-\d{4}$/.test(str)) {
+    const [d, m, y] = str.split("-");
+    return `${y}-${m}-${d}`;
+  }
+  return str;
 }
 
 function addDays(dateStr, days) {
@@ -108,14 +118,16 @@ const CycleTracker = () => {
     setLoading(true);
     setError("");
     const token = localStorage.getItem("shecare_token");
+    const payload = {
+      start_date: toIsoDate(startDate),
+      end_date: null,
+      notes: ""
+    };
+    console.log("Submitting payload:", payload); // Debug log
     api
       .post(
         "/cycle-tracker",
-        {
-          start_date: startDate,
-          end_date: null,
-          notes: ""
-        },
+        payload,
         {
           headers: token ? { Authorization: `Bearer ${token}` } : {}
         }
@@ -124,7 +136,15 @@ const CycleTracker = () => {
         setStartDate("");
         fetchEntries();
       })
-      .catch(() => setError("Failed to add period start date."))
+      .catch((err) => {
+        setError("Failed to add period start date.");
+        // Print backend error details
+        if (err.response) {
+          console.error("Backend error:", err.response.data);
+        } else {
+          console.error(err);
+        }
+      })
       .finally(() => setLoading(false));
   };
 
@@ -133,7 +153,7 @@ const CycleTracker = () => {
     setError("");
     const token = localStorage.getItem("shecare_token");
     api
-      .delete(`/cycle-tracker/${id}`,
+      .del(`/cycle-tracker/${id}`,
         { headers: token ? { Authorization: `Bearer ${token}` } : {} }
       )
       .then(() => fetchEntries())

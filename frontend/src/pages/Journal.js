@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import api from "../api";
+import * as api from "../api";
 
 const MOODS = [
   { emoji: "😄", label: "Happy" },
@@ -98,7 +98,7 @@ const Journal = () => {
     setLoading(true);
     setError("");
     const token = localStorage.getItem("shecare_token");
-    api.delete(`/journal/${id}`,
+    api.del(`/journal/${id}`,
       { headers: token ? { Authorization: `Bearer ${token}` } : {} }
     )
       .then(() => fetchEntries())
@@ -200,4 +200,4 @@ const Journal = () => {
   );
 };
 
-export default Journal; 
+export default Journal;

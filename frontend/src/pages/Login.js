@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import api from "../api";
+import * as api from "../api";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -18,15 +18,11 @@ const Login = () => {
     setError("");
     setLoading(true);
     try {
-      // 1. Login and get token
-      const res = await api.post("/auth/login", { email, password });
-      const { access_token } = res.data;
+      const res = await api.loginUser({ email, password });
+      const { access_token } = res;
       localStorage.setItem("shecare_token", access_token);
-      // 2. Fetch user info with token
-      const userRes = await api.get("/auth/me", {
-        headers: { Authorization: `Bearer ${access_token}` }
-      });
-      localStorage.setItem("shecare_user", JSON.stringify(userRes.data));
+      api.setAuthToken(access_token);
+      // Optionally fetch user profile here
       setLoading(false);
       navigate("/dashboard");
     } catch (err) {
