@@ -15,6 +15,15 @@
 
 👉 [Click here to watch on YouTube](https://www.youtube.com/watch?v=NgFmbqZ4RCE)
 
+
+
+## 🎥 SheCare AI - Full Demo Video (Google Drive)
+
+📂 [Watch the demo on Google Drive](https://drive.google.com/file/d/1tq7q6FUqvDY9ZtCSdaiypFIlDrrPfa18/view?usp=drive_link)
+
+
+
+
 ---
 ## 🌟 Features
 
