@@ -1,4 +1,5 @@
 # Snapshot- 
+[![Demo](demo.gif)](https://drive.google.com/file/d/1tq7q6FUqvDY9ZtCSdaiypFIlDrrPfa18/view?usp=sharing)
 
 ---
 # SheCare AI
