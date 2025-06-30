@@ -5,6 +5,21 @@
 Youtube Link: https://youtu.be/NgFmbqZ4RCE?si=0sPfBxQtiqVZ0y1r
 ---
 
+# Live link - https://shecare-ai-1-5jqe.onrender.com/
+
+<h2 align="center">🎥 SheCare AI - Demo Video</h2>
+
+<p align="center">
+  <a href="https://youtu.be/gU0lN3_8I-I">
+    <img src="https://img.youtube.com/vi/gU0lN3_8I-I/0.jpg" alt="SheCare AI Demo" width="600">
+  </a>
+</p>
+
+<p align="center">
+  ▶️ <a href="https://youtu.be/gU0lN3_8I-I">Watch on YouTube</a><br>
+  📂 <a href="https://drive.google.com/file/d/1tq7q6FUqvDY9ZtCSdaiypFIlDrrPfa18/view?usp=drive_link">Watch on Google Drive</a>
+</p>
+
 ## 🌟 Features
 
 - 🔐 **User Authentication**  
