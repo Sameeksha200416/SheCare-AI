@@ -7,31 +7,14 @@
 **SheCare AI** is a comprehensive health tracking and wellness assistant platform designed specifically for women. It empowers users with tools to track menstrual cycles, log moods and symptoms, assess PCOS risk, receive personalized health recommendations, and interact with AI-powered chatbots for timely support.
 
 ---
-# Youtube link - https://youtu.be/NgFmbqZ4RCE?si=0sPfBxQtiqVZ0y1r
-
-## 🎥 SheCare AI - Demo Video
-
-[![Watch the Demo](https://img.youtube.com/vi/NgFmbqZ4RCE/0.jpg)](https://www.youtube.com/watch?v=NgFmbqZ4RCE)
-
-👉 [Click here to watch on YouTube](https://www.youtube.com/watch?v=NgFmbqZ4RCE)
 
 
-
-## 🎥 SheCare AI - Full Demo Video (Google Drive)
-
-📂 [Watch the demo on Google Drive](https://drive.google.com/file/d/1tq7q6FUqvDY9ZtCSdaiypFIlDrrPfa18/view?usp=drive_link)
-
-
-
-## 🎥 SheCare AI - Demo Videos
+## 🎥Demo Videos
 
 [![Watch on YouTube](https://img.youtube.com/vi/NgFmbqZ4RCE/0.jpg)](https://www.youtube.com/watch?v=NgFmbqZ4RCE)
 
 ▶️ [Watch on YouTube](https://www.youtube.com/watch?v=NgFmbqZ4RCE)  
 📂 [Download or view on Google Drive](https://drive.google.com/file/d/1tq7q6FUqvDY9ZtCSdaiypFIlDrrPfa18/view?usp=drive_link)
-
-
-
 
 
 ---
