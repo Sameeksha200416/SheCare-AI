@@ -419,10 +419,14 @@ This project has significantly enhanced my capabilities as a full-stack develope
 The **SheCare AI** platform stands as a testament to the power of technology in improving healthcare accessibility and empowering individuals to take control of their health journey.
 
 ---
+**Developer Team Name**: Sonam Nimje, Shreya Saraf, Sameeksha Vishwakarma, Riya Saraf
 
 **Developer Team**: The Avalanche
-**Developer Team Name**: Sonam Nimje,Shreya Saraf,Sameeksha Vishwakarma,Riya Saraf
+
 **Project Duration**: 7 weeks  
+
 **Technologies**: React.js, FastAPI, SQLite, JWT  
+
 **Deployment**: Render Cloud Platform  
+
 **Repository**: [GitHub - SheCare-AI](https://github.com/Sameeksha200416/SheCare-AI)
