@@ -420,7 +420,8 @@ The **SheCare AI** platform stands as a testament to the power of technology in 
 
 ---
 
-**Developer**: Sameeksha  
+**Developer Team**: The Avalanche
+**Developer Team Name**: Sonam Nimje,Shreya Saraf,Sameeksha Vishwakarma,Riya Saraf
 **Project Duration**: 7 weeks  
 **Technologies**: React.js, FastAPI, SQLite, JWT  
 **Deployment**: Render Cloud Platform  
